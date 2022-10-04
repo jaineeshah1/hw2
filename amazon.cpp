@@ -9,6 +9,7 @@
 #include "db_parser.h"
 #include "product_parser.h"
 #include "util.h"
+#include "MyDataStore.h"
 
 using namespace std;
 struct ProdNameSorter {
@@ -29,8 +30,8 @@ int main(int argc, char* argv[])
      * Declare your derived DataStore object here replacing
      *  DataStore type to your derived type
      ****************/
-    DataStore ds;
-
+    //DataStore ds;
+    MyDataStore ds;
 
 
     // Instantiate the individual section and product parsers we want

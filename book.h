@@ -17,6 +17,7 @@ class Book: public Product {
     std::string isbn_;
     std::set<std::string> keywords() const;
     std::string displayString() const;
+    void dump(std::ostream& os) const;
 };
 
 #endif

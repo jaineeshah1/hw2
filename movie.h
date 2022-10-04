@@ -17,6 +17,7 @@ class Movie: public Product {
     std::string rating_;
     std::set<std::string> keywords() const;
     std::string displayString() const;
+    void dump(std::ostream& os) const;
 };
 
 #endif

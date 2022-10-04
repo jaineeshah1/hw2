@@ -24,8 +24,14 @@ std::set<std::string> Book::keywords() const {
 }
 std::string Book::displayString() const {
   std::string display = "";
-  display += "Book name: " + name_;
-  display += ", Author: " + author_;
-  display += ", ISBN: " + isbn_;
+  display += name_ + "\n";
+  display += "Author: " + author_ + " ISBN: " + isbn_;
+  display += std::to_string(price_) + " " + std::to_string(qty_) + " left.";
   return display;
+}
+
+void Book::dump(std::ostream& os) const
+{
+    os << category_ << "\n" << name_ << "\n" << price_ << "\n" 
+    << qty_ << isbn_ << author_ << std::endl;
 }

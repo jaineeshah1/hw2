@@ -10,11 +10,14 @@ class Clothing: public Product {
       const std::string name, 
       double price, 
       int qty, 
-      std::string brand
+      std::string brand,
+      std::string size
       );
     std::string brand_;
+    std::string size_;
     std::set<std::string> keywords() const;
     std::string displayString() const;
+    void dump(std::ostream& os) const;
 };
 
 #endif
